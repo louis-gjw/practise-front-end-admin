@@ -20,10 +20,22 @@
         prop="gender"
         label="性别"
         >
+        <template slot-scope="scope">
+          <div :class="{'man': scope.row.gender === 1 , 'woman': scope.row.gender === 2}">{{differentColor(scope.row.gender)}}</div>
+        </template>
       </el-table-column>
     </el-table>
   </div>
 </template>
+
+<style>
+  .el-table .man {
+    color: green;
+  }
+  .el-table .woman {
+    color: red;
+  }
+</style>
 
 <script>
 export default {
@@ -38,11 +50,19 @@ export default {
       }, {
         name: 'Jimmy',
         gender: 3
-      }, ]
+      }],
     }  
   },
   methods: {
-    
+    differentColor(gender) {
+      if(gender === 1) {
+        return '男'
+      }else if(gender === 2) {
+        return '女'
+      }else {
+        return '未知'
+      }
+    }
   }
 }
 </script>
