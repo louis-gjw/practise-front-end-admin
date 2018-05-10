@@ -11,8 +11,8 @@ Fork 本项目。完成下面的任务。
     * [x] 自定义列的显示内容。
   * [x] 分页组件 [任务描述](task/component/pagination.md)
   * [x] 弹出框(Dialog 对话框) [任务描述](task/component/dialog.md)
-  * [ ] 信息提示 [任务描述](task/component/message.md)
-  * [ ] MessageBox 弹框 [任务描述](task/component/message-box.md)
+  * [x] 信息提示 [任务描述](task/component/message.md)
+  * [x] MessageBox 弹框 [任务描述](task/component/message-box.md)
   * [ ] 按钮 [任务描述](task/component/button.md)
   * [ ] 表单类组件
     * [ ] 输入框，文本域名，数字输入框(InputNumber)。 [任务描述](task/component/input.md)
